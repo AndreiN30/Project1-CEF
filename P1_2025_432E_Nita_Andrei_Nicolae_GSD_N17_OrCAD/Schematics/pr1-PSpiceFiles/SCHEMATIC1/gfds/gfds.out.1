@@ -1,0 +1,84 @@
+
+**** 11/16/25 18:20:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-gfds"  [ C:\Users\nitaa\Desktop\proiect cef\Schematics\pr1-pspicefiles\schematic1\gfds.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "gfds.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/nitaa/Desktop/proiect cef/biblioteci spice/bc846b.lib" 
+----------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "C:/Users/nitaa/Desktop/proiect cef/biblioteci spice/bc856b.lib" 
+----------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "C:/Users/nitaa/Desktop/proiect cef/biblioteci spice/opto.lib" 
+* From [PSPICE NETLIST] section of C:\Users\nitaa\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+--------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 4ms 0 1u SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PR1
+R_R1         N13241 N11142  15k TC=0,0 
+V_V1         N11142 0 5Vdc
+R_R4         N11142 N55907  100 TC=0,0 
+R_R5         N27119 N41311  10k TC=0,0 
+Q_Q3         N23866 N18917 N13241 QBC856B 
+Q_Q4         N17645 N27119 N13241 QBC856B 
+Q_Q9         N17645 N17645 N55630 QBC846B 
+Q_Q8         N23866 N17645 N55700 QBC846B 
+R_R6         0 N18917  47k TC=0,0 
+R_R8         N192121 N19228  15k TC=0,0 
+V_V3         0 N17659 5Vdc
+Q_Q5         N27578 N23866 N17659 QBC846B 
+Q_Q11         N11142 N26865 N19228 QBC846B 
+Q_Q10         N17659 N26902 N19228 QBC856B 
+R_R10         N26902 N17659  9.1k TC=0,0 
+R_R11         N11142 N26865  9.1k TC=0,0 
+C_C1         N27119 0  100p  TC=0,0 
+R_R12         N18917 N27578  47k TC=0,0 
+X_P1         N27578 N27578 N41311 POT PARAMS: SET=1 VALUE=10k
+R_R13         N416411 N41671  3.9k TC=0,0 
+X_P2         N41671 N41581 0 POT PARAMS: SET=1 VALUE=10k
+C_C2         N27578 N416411  1u  TC=0,0 
+R_R16         N27119 N41311  8.2k TC=0,0 
+C_C3         N27119 0  470p  TC=0,0 
+D_D3         N26865 N41581 D1N4148 
+D_D4         N41581 N26902 D1N4148 
+D_LED1         N11142 N536461 MLED81
+R_R14         N536461 0  330 TC=0,0 
+R_R15         N17659 N540281  330 TC=0,0 
+D_LED2         0 N540281 MLED81
+C_C4         N27119 0  100p  TC=0,0 
+R_R17         0 N192121  2k TC=0,0 
+R_R18         N17659 N55630  51 TC=0,0 
+R_R19         N17659 N55700  51 TC=0,0 
+Q_Q12         N27578 N56042 N55907 QBC856B 
+D_D5         N11142 N559671 D1N4148 
+D_D6         N559671 N56042 D1N4148 
+R_R20         0 N56042  3.9k TC=0,0 
+
+**** RESUMING gfds.cir ****
+.END
+

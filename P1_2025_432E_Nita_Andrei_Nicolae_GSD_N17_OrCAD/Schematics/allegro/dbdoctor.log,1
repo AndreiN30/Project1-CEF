@@ -1,0 +1,15 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : PR1.brd                                       )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Sun Dec 14 16:05:40 2025                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+WARNING Deleted redundant via at (1106.00 1260.00) on net 0.
+WARNING Deleted redundant via at (406.00 1232.00) on net 0.
+
+2 warnings, 0 errors detected, 0 errors could be fixed.

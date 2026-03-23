@@ -1,0 +1,22 @@
+** Profile: "SCHEMATIC1-gfds"  [ C:\Users\nitaa\Desktop\proiect cef\Schematics\pr1-pspicefiles\schematic1\gfds.sim ] 
+
+** Creating circuit file "gfds.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../biblioteci spice/bc846b.lib" 
+.LIB "../../../biblioteci spice/bc856b.lib" 
+.LIB "../../../biblioteci spice/opto.lib" 
+* From [PSPICE NETLIST] section of C:\Users\nitaa\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 4ms 0 1u SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
